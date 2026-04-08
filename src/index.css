@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100% / 0.45;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100% / 0.7;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 215 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 92%;
+    --secondary-foreground: 220 25% 20%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 215 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 215 80% 55%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 100% / 0.35;
+    --sidebar-foreground: 220 15% 30%;
+    --sidebar-primary: 215 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 80% 55% / 0.1;
+    --sidebar-accent-foreground: 215 80% 45%;
+    --sidebar-border: 220 15% 88% / 0.5;
+    --sidebar-ring: 215 80% 55%;
+
+    /* Glass tokens */
+    --glass-bg: 0 0% 100% / 0.4;
+    --glass-border: 0 0% 100% / 0.5;
+    --glass-blur: 20px;
+    --glass-shadow: 0 8px 32px 0 hsla(220, 25%, 10%, 0.08);
+
+    /* Gradient mesh background */
+    --gradient-mesh: 
+      radial-gradient(ellipse at 20% 20%, hsla(215, 80%, 70%, 0.2) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, hsla(280, 60%, 70%, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 30%, hsla(190, 70%, 70%, 0.1) 0%, transparent 50%),
+      hsl(220, 20%, 97%);
+
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .dark {
+    --background: 222 30% 8%;
+    --foreground: 210 20% 92%;
+    --card: 222 25% 14% / 0.5;
+    --card-foreground: 210 20% 92%;
+    --popover: 222 25% 14% / 0.7;
+    --popover-foreground: 210 20% 92%;
+    --primary: 215 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 20% 16%;
+    --secondary-foreground: 210 20% 85%;
+    --muted: 222 20% 16%;
+    --muted-foreground: 215 15% 55%;
+    --accent: 215 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 20% 18%;
+    --input: 222 20% 18%;
+    --ring: 215 80% 60%;
+    --sidebar-background: 222 25% 10% / 0.5;
+    --sidebar-foreground: 210 15% 75%;
+    --sidebar-primary: 215 80% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 80% 60% / 0.1;
+    --sidebar-accent-foreground: 215 80% 65%;
+    --sidebar-border: 222 20% 18% / 0.5;
+    --sidebar-ring: 215 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: var(--gradient-mesh);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-strong {
+    background: hsl(0 0% 100% / 0.6);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid hsl(0 0% 100% / 0.6);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-subtle {
+    background: hsl(0 0% 100% / 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(0 0% 100% / 0.3);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(215, 80%, 55%), hsl(280, 60%, 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
