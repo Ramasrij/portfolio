@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectFakereview from "@/assets/project-fakereview.jpg";
 import projectUsermgmt from "@/assets/project-usermgmt.jpg";
+import projectTictactoe from "@/assets/project-tictactoe.jpg";
 import projectAuth from "@/assets/project-auth.jpg";
 
 const projects = [
@@ -23,16 +24,25 @@ const projects = [
       "Built an AI-based system to detect fake and genuine reviews using machine learning techniques and text analysis.",
     image: projectFakereview,
     color: "from-violet-400/20 to-pink-400/10",
-    link: "https://your-ml-project-link.com",
+    link: "https://github.com/Ramasrij/fake-review-prediction",
   },
+  // {
+  //   title: "User Management System",
+  //   category: "Web Development",
+  //   description:
+  //     "Created a CRUD application using PHP and MySQL to manage user data with add, edit, delete and view functionalities.",
+  //   image: projectUsermgmt,
+  //   color: "from-emerald-400/20 to-teal-400/10",
+  //   link: "https://ramasrij.github.io/gamepro/",
+  // },
   {
-    title: "User Management System",
+    title: "Tic Tac Toe Game",
     category: "Web Development",
     description:
-      "Created a CRUD application using PHP and MySQL to manage user data with add, edit, delete and view functionalities.",
-    image: projectUsermgmt,
-    color: "from-emerald-400/20 to-teal-400/10",
-    link: "https://your-user-mgmt-link.com",
+      "Built an interactive Tic Tac Toe game using HTML, CSS and JavaScript with dynamic gameplay, win detection and a clean responsive UI.",
+    image: projectTictactoe,
+    color: "from-rose-400/20 to-red-400/10",
+     link: "https://ramasrij.github.io/gamepro/",
   },
   {
     title: "Authentication UI",

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { User, Mail, Home, Layers, Menu, X } from "lucide-react";
+import { User, Mail, Home, Layers, Menu, X, FileText, Briefcase, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface MobileHeaderProps {
@@ -10,7 +10,10 @@ interface MobileHeaderProps {
 const navItems = [
   { id: "home", label: "Home", icon: Home },
   { id: "about", label: "About", icon: User },
+  { id: "skills", label: "Skills", icon: Sparkles },
+  { id: "experience", label: "Experience", icon: Briefcase },
   { id: "projects", label: "Projects", icon: Layers },
+  { id: "resume", label: "Resume", icon: FileText },
   { id: "contact", label: "Contact", icon: Mail },
 ];
 
@@ -20,7 +23,7 @@ const MobileHeader = ({ activeSection, onNavigate }: MobileHeaderProps) => {
   return (
     <header className="md:hidden fixed top-0 left-0 right-0 z-50 p-3">
       <div className="glass-strong rounded-2xl px-4 py-3 flex items-center justify-between">
-        <span className="font-semibold text-foreground">Alex Morgan</span>
+        <span className="font-semibold text-foreground">Rama Sri J</span>
         <button onClick={() => setOpen(!open)} className="text-foreground p-1">
           {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
