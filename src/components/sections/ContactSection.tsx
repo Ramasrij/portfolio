@@ -74,6 +74,7 @@ const ContactSection = () => {
               <div className="space-y-2">
                 <label className="text-sm font-medium text-muted-foreground">Name</label>
                 <input
+                  
                   type="text"
                   name="user_name"
                   required
