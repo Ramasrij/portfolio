@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Layout, Database, Wrench } from "lucide-react";
+import { Code, Layout, Database, Wrench, TestTube } from "lucide-react";
 
 const skills = [
   {
@@ -21,6 +21,11 @@ const skills = [
     icon: Wrench,
     label: "Tools & Platforms",
     desc: "Git, GitHub, VS Code",
+  },
+  {
+    icon: TestTube,
+    label: "QA Testing",
+    desc: "Manual Testing, Bug Reporting, Test Cases",
   },
 ];
 

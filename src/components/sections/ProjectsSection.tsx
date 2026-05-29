@@ -6,6 +6,7 @@ import projectFakereview from "@/assets/project-fakereview.jpg";
 import projectUsermgmt from "@/assets/project-usermgmt.jpg";
 import projectTictactoe from "@/assets/project-tictactoe.jpg";
 import projectAuth from "@/assets/project-auth.jpg";
+import projectMoodMirror from "@/assets/mood-emotions.png";
 
 const projects = [
   {
@@ -42,7 +43,7 @@ const projects = [
       "Built an interactive Tic Tac Toe game using HTML, CSS and JavaScript with dynamic gameplay, win detection and a clean responsive UI.",
     image: projectTictactoe,
     color: "from-rose-400/20 to-red-400/10",
-     link: "https://ramasrij.github.io/gamepro/",
+    link: "https://ramasrij.github.io/gamepro/",
   },
   {
     title: "Authentication UI",
@@ -52,6 +53,15 @@ const projects = [
     image: projectAuth,
     color: "from-amber-400/20 to-orange-400/10",
     link: "https://signin-five.vercel.app/",
+  },
+  {
+    title: "Mood Mirror",
+    category: "Web Development",
+    description:
+      "Created a browser-based mood detection app that analyzes typing speed and mouse behavior patterns, rendering 4 dynamic UI themes in real-time for an interactive user experience.",
+    image: projectMoodMirror,
+    color: "from-purple-400/20 to-pink-400/10",
+    link: "https://ramasrij.github.io/mood-mirror/",
   },
 ];
 
@@ -89,13 +99,13 @@ const ProjectsSection = () => {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
               />
               <a
-  href={project.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="absolute top-3 right-3 z-20 glass-strong p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
->
-  <ExternalLink className="w-4 h-4 text-foreground" />
-</a>
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-3 right-3 z-20 glass-strong p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
+              >
+                <ExternalLink className="w-4 h-4 text-foreground" />
+              </a>
               {/* <div className="absolute top-3 right-3 z-20 glass-strong p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110">
                 <ExternalLink className="w-4 h-4 text-foreground" />
               </div> */}
