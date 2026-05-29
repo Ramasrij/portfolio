@@ -32,7 +32,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           <span className="w-2 h-2 rounded-full bg-emerald-400/60" />
         </div>
         <span className="text-primary/60">const</span> dev = {"{"}<br />
-        &nbsp;&nbsp;name: <span className="text-emerald-400/80">"Ramashree"</span>,<br />
+        &nbsp;&nbsp;name: <span className="text-emerald-400/80">"Ramasri"</span>,<br />
         &nbsp;&nbsp;role: <span className="text-emerald-400/80">"Frontend Dev"</span>,<br />
         &nbsp;&nbsp;passion: <span className="text-emerald-400/80">"UI/UX"</span><br />
         {"}"};

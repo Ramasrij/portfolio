@@ -97,7 +97,7 @@ const ResumeSection = () => {
         <div className="flex items-center gap-2 text-foreground font-semibold">
           <Languages className="w-5 h-5" />
           Languages
-        </div>
+        </div> 
         <div className="space-y-3">
           {languages.map((lang) => (
             <div key={lang.name} className="flex justify-between text-sm">

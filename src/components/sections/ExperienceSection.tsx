@@ -14,6 +14,7 @@ const experiences = [
     period: "Jul 2024 — Aug 2024",
     desc: "Developed a responsive service-based web application using React, TypeScript and Tailwind CSS. Focused on clean UI design and responsiveness.",
   },
+  
   {
     role: "Frontend Developer",
     company: "Vision Scematics Pvt Ltd",
